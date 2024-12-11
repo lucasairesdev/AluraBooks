@@ -2,8 +2,17 @@
     display: flex;
     font-size: 40px;
     margin-right: 10px;
+    height: 80px;
+    margin: 8px;
 }
 
 .logo-img{
     margin-right: 10px;
+}
+
+.NomeLogo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }

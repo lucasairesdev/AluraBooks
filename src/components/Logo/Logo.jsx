@@ -8,7 +8,7 @@ export const Logo = () => {
           alt='logo'
           className='logo-img'
       ></img>
-      <p><strong>Alura</strong>Books</p>
+      <p className='NomeLogo'><strong>Alura</strong>Books</p>
   </div>
     )
 }
