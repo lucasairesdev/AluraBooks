@@ -1,5 +1,9 @@
 import './Pesquisa.css'
+import { useState } from 'react'
+
+
 export const Pesquisa = () =>{
+    const [textoDigitado, setTextoDigitado] = useState('')
     return(
         <section className='ContainerPesquisa'>
             <h2 className='TituloPesquisa'>
@@ -10,7 +14,12 @@ export const Pesquisa = () =>{
                 Encontre seu livro em nossa estante.
             </h3>
 
-            <input type="text" placeholder="Pesquise sua próxima leitura"/>
+            <input 
+            placeholder="Pesquise sua próxima leitura"
+            onBlur={evento => setTextoDigitado(evento.target.value)}
+            />
+            
+            <p>{textoDigitado}</p>
         </section>
     )
 }
