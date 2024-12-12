@@ -8,7 +8,7 @@ export const IconesHeader = () =>{
     return(
         <ul className='icones'>
             { icones.map( (icone) => (
-              <li className='icone'><img src={icone}></img></li>
+              <li className='icone' key={''}><img src={icone} ></img></li>
             )) }
         </ul>
     )

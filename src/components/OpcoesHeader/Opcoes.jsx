@@ -7,7 +7,7 @@ export const OpcoesHeader = () => {
   return (
     <ul className="opcoes">
         {opcoesDeTexto.map((texto) => (
-        <li className="opcao">
+        <li className="opcao" key={''}>
           <p>{texto}</p>
         </li>
       ))}
